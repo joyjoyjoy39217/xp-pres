@@ -669,6 +669,9 @@
     .pab-who    { background: rgba(59,130,246,0.1);  color: #3B82F6; }
     .pab-delight { background: rgba(139,92,246,0.1); color: #8B5CF6; }
     .pab-maint  { background: rgba(148,163,184,0.15); color: #64748B; }
+    .pab-p0     { background: rgba(239,68,68,0.12);  color: #DC2626; }
+    .pab-p1     { background: rgba(245,158,11,0.12); color: #D97706; }
+    .pab-p2     { background: rgba(16,185,129,0.12); color: #059669; }
     .prio-principle {
         font-size: 14px;
         color: #64748B;
@@ -1844,7 +1847,7 @@
             <div>
                 <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:8px;">Team</div>
                 <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:6px;">
-                    <li style="font-size:15px; color:#334155; line-height:1.5; padding-left:14px; position:relative;"><span style="position:absolute; left:0; color:#CBD5E1;">•</span><span style="background:rgba(239,68,68,0.1); color:#EF4444; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; padding:2px 8px; border-radius:100px; letter-spacing:0.5px;">TEMP CONSTRAINT</span> <strong>Eng-heavy</strong> for the next year — prioritize Eng-leverage work over DS-dependent work
+                    <li style="font-size:15px; color:#334155; line-height:1.5; padding-left:14px; position:relative;"><span style="position:absolute; left:0; color:#CBD5E1;">•</span><span style="background:rgba(239,68,68,0.1); color:#EF4444; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; padding:2px 8px; border-radius:100px; letter-spacing:0.5px;">CONSTRAINT</span> <strong>Eng-heavy</strong> for the next year — prioritize Eng-leverage work over DS-dependent work
                         <div style="font-size:13px; color:#64748B; padding-left:14px; margin-top:2px;">→ <strong>1 DS FTE</strong> limits platform's ability for adv. capability development</div>
                     </li>
                     <li style="font-size:15px; color:#334155; line-height:1.5; padding-left:14px; position:relative;"><span style="position:absolute; left:0; color:#CBD5E1;">•</span><strong>XP team develops faster with AI</strong> — especially UI work, significantly accelerated</li>
@@ -1854,7 +1857,7 @@
             <div>
                 <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:8px;">Product</div>
                 <ul style="list-style:none; padding:0;">
-                    <li style="font-size:15px; color:#334155; line-height:1.5; padding-left:14px; position:relative;"><span style="position:absolute; left:0; color:#CBD5E1;">•</span><span style="background:rgba(239,68,68,0.1); color:#EF4444; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; padding:2px 8px; border-radius:100px; letter-spacing:0.5px;">TEMP CONSTRAINT</span> <strong>Mature product with significant tech debt</strong> — tight coupling and integration patterns don't scale cleanly. ~25% bandwidth for KTLO, goal is <strong>10%</strong></li>
+                    <li style="font-size:15px; color:#334155; line-height:1.5; padding-left:14px; position:relative;"><span style="position:absolute; left:0; color:#CBD5E1;">•</span><span style="background:rgba(239,68,68,0.1); color:#EF4444; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; padding:2px 8px; border-radius:100px; letter-spacing:0.5px;">CONSTRAINT</span> <strong>Mature product with significant tech debt</strong> — tight coupling and integration patterns don't scale cleanly. ~25% bandwidth for KTLO, goal is <strong>10%</strong></li>
                 </ul>
             </div>
             <!-- ORG & BUSINESS -->
@@ -1863,6 +1866,7 @@
                 <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:6px;">
                     <li style="font-size:15px; color:#334155; line-height:1.5; padding-left:14px; position:relative;"><span style="position:absolute; left:0; color:#CBD5E1;">•</span><strong>AI adoption is high</strong> — 50%+ of users already use Claude. Expect <strong>90%+ within 6 months</strong></li>
                     <li style="font-size:15px; color:#334155; line-height:1.5; padding-left:14px; position:relative;"><span style="position:absolute; left:0; color:#CBD5E1;">•</span><strong>New verticals are strategic bets</strong> — strong push for platforms to support expansion</li>
+                    <li style="font-size:15px; color:#334155; line-height:1.5; padding-left:14px; position:relative;"><span style="position:absolute; left:0; color:#CBD5E1;">•</span><strong>Bottoms-up culture results in goal metrics proliferation</strong> — teams propose their own OKR/goal metrics, which can compound over time. Launch quality bar is upheld by live launch reviews with org leaders</li>
                 </ul>
             </div>
         </div>
@@ -1883,16 +1887,28 @@
 
             <!-- ── Pyramid: all tiers 500px wide, clip-path creates true trapezoid pyramid ── -->
             <div style="grid-column:2; grid-row:1; width:500px; height:64px; display:flex; align-items:center; justify-content:center; background:rgba(16,185,129,0.12); clip-path:polygon(40% 0%, 60% 0%, 70% 100%, 30% 100%);">
-                <div style="font-family:'Space Grotesk',sans-serif; font-size:18px; font-weight:700; color:#059669; text-transform:uppercase; letter-spacing:0.5px;">Delight</div>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:18px; font-weight:700; color:#059669; text-transform:uppercase; letter-spacing:0.5px;">Delight</div>
+                    <span style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:800; color:#059669; background:rgba(16,185,129,0.25); padding:2px 7px; border-radius:4px;">P2</span>
+                </div>
             </div>
             <div style="grid-column:2; grid-row:2; width:500px; height:64px; display:flex; align-items:center; justify-content:center; background:rgba(245,158,11,0.12); clip-path:polygon(30% 0%, 70% 0%, 84% 100%, 16% 100%);">
-                <div style="font-family:'Space Grotesk',sans-serif; font-size:18px; font-weight:700; color:#D97706; text-transform:uppercase; letter-spacing:0.5px;">Advanced Capabilities</div>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:18px; font-weight:700; color:#D97706; text-transform:uppercase; letter-spacing:0.5px;">Advanced Capabilities</div>
+                    <span style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:800; color:#D97706; background:rgba(245,158,11,0.25); padding:2px 7px; border-radius:4px;">P1</span>
+                </div>
             </div>
             <div style="grid-column:2; grid-row:3; width:500px; height:64px; display:flex; align-items:center; justify-content:center; background:rgba(245,158,11,0.08); clip-path:polygon(16% 0%, 84% 0%, 98% 100%, 2% 100%);">
-                <div style="font-family:'Space Grotesk',sans-serif; font-size:18px; font-weight:700; color:#D97706; text-transform:uppercase; letter-spacing:0.5px;">Velocity</div>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:18px; font-weight:700; color:#D97706; text-transform:uppercase; letter-spacing:0.5px;">Velocity</div>
+                    <span style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:800; color:#D97706; background:rgba(245,158,11,0.25); padding:2px 7px; border-radius:4px;">P1</span>
+                </div>
             </div>
             <div style="grid-column:2; grid-row:4; width:500px; height:64px; display:flex; align-items:center; justify-content:center; background:rgba(239,68,68,0.12); clip-path:polygon(2% 0%, 98% 0%, 100% 100%, 0% 100%);">
-                <div style="font-family:'Space Grotesk',sans-serif; font-size:18px; font-weight:700; color:#EF4444; text-transform:uppercase; letter-spacing:0.5px;">Access & Trustworthiness</div>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:18px; font-weight:700; color:#EF4444; text-transform:uppercase; letter-spacing:0.5px;">Access & Trustworthiness</div>
+                    <span style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:800; color:#DC2626; background:rgba(239,68,68,0.25); padding:2px 7px; border-radius:4px;">P0</span>
+                </div>
             </div>
             <!-- Build up from the base — row 5, centered under pyramid -->
             <div style="grid-column:2; grid-row:5; display:flex; align-items:center; justify-content:center;">
@@ -2036,7 +2052,7 @@
     <div class="slide prio-slide" id="slide-12">
     <div class="sc">
         <div class="prio-header">
-            <span class="prio-area-badge pab-reach">EXPANSION</span>
+            <span class="prio-area-badge pab-p0">P0</span>
             <span class="slide-title" style="font-size:30px;">Expand to New Verticals</span>
         </div>
         <div class="prio-principle"><strong>User problem:</strong> [TODO] New vertical orgs (Games, Live) can't run experiments because the platform is coupled to legacy pipelines — they're blocked from validating revenue-critical product changes.</div>
@@ -2132,7 +2148,7 @@
     <div class="slide prio-slide" id="slide-13">
     <div class="sc">
         <div class="prio-header">
-            <span class="prio-area-badge pab-who">WHO</span>
+            <span class="prio-area-badge pab-p0">P0</span>
             <span class="slide-title" style="font-size:30px;">Rigor, Guardrails & Trust</span>
         </div>
 
@@ -2223,7 +2239,7 @@
     <div class="slide prio-slide" id="slide-14">
     <div class="sc">
         <div class="prio-header">
-            <span class="prio-area-badge pab-who">WHO</span>
+            <span class="prio-area-badge pab-p1">P1</span>
             <span class="slide-title" style="font-size:28px;">Reduce Specialized Knowledge to Enable DS-Optional Self-Service</span>
         </div>
         <div class="prio-principle"><strong>User problem:</strong> Engineers and PMs can't self-serve experiments because setup and interpretation require DS expertise — creating a bottleneck that limits how many experiments the org can run.</div>
@@ -2232,7 +2248,7 @@
             <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">Prioritization Framework:</div>
             <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:3px;">
                 <li style="font-size:13px; color:#475569; padding-left:14px; position:relative; line-height:1.4;"><span style="position:absolute; left:0; color:#64748B;">→</span> <strong>Statistical knowledge generally takes precedence</strong> — high XP ownership (no one else will do the calculation), high reach (every experimenter, every test)</li>
-                <li style="font-size:13px; color:#475569; padding-left:14px; position:relative; line-height:1.4;"><span style="position:absolute; left:0; color:#64748B;">→</span> Domain knowledge is prioritized <strong>when it's evergreen</strong> — lower XP ownership (teams can capture in working docs), team-specific reach</li>
+                <li style="font-size:13px; color:#475569; padding-left:14px; position:relative; line-height:1.4;"><span style="position:absolute; left:0; color:#64748B;">→</span> <strong>Domain knowledge onboarding</strong> is prioritized <strong>when it's evergreen</strong> — lower XP ownership (teams can capture in working docs), team-specific reach</li>
                 <li style="font-size:13px; color:#475569; padding-left:14px; position:relative; line-height:1.4;"><span style="position:absolute; left:0; color:#64748B;">→</span> <strong>Gaps that block teams from experimenting at all</strong> take immediate precedence — see Rigor, Guardrails & Trust</li>
             </ul>
         </div>
@@ -2242,7 +2258,7 @@
 
             <!-- Root -->
             <div style="border:1.5px solid #334155; border-radius:6px; padding:6px 20px; background:#FFFFFF;">
-                <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:600; color:#334155;">Specialized Knowledge</div>
+                <div style="font-family:'Space Grotesk',sans-serif; font-size:15px; font-weight:700; color:#334155;">Specialized Knowledge</div>
             </div>
 
             <!-- Branch arrows -->
@@ -2260,22 +2276,22 @@
 
                 <!-- Data Pipeline Knowledge -->
                 <div style="flex:0.7; border:1.5px solid #E2E8F0; border-radius:8px; padding:10px 14px; background:#FFFFFF;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Data Pipeline</div>
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:15px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Data Pipeline</div>
                     <div style="height:4px; background:#E2E8F0; border-radius:2px; margin-bottom:4px;">
                         <div style="height:100%; width:95%; background:#16A34A; border-radius:2px;"></div>
                     </div>
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-style:italic; color:#64748B; margin-bottom:6px;">Strategy: seamless validated metrics onboarding, available for all to use</div>
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-style:italic; color:#334155; margin-bottom:12px;">Strategy: seamless <strong>validated metrics</strong> onboarding, available for all to use</div>
                     <div style="display:flex; gap:8px;">
                         <div style="flex:1;">
-                            <div style="font-size:8px; color:#94A3B8; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Users see</div>
-                            <div style="font-size:10px; color:#334155;">Drag-and-drop metric selection</div>
+                            <div style="font-size:11px; color:#64748B; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Users see</div>
+                            <div style="font-size:11px; color:#334155;">Drag-and-drop metric selection</div>
                         </div>
                         <div style="flex:1;">
-                            <div style="font-size:8px; color:#94A3B8; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Platform abstracts</div>
-                            <div style="display:flex; flex-direction:column; gap:1px;">
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#334155;">• Right tables</div>
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#334155;">• Metric definitions</div>
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#334155;">• SQL generation</div>
+                            <div style="font-size:11px; color:#64748B; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Platform abstracts</div>
+                            <div style="display:flex; flex-direction:column; gap:2px;">
+                                <div style="font-size:11px; color:#334155;">• Right tables</div>
+                                <div style="font-size:11px; color:#334155;">• Metric definitions</div>
+                                <div style="font-size:11px; color:#334155;">• SQL generation</div>
                             </div>
                         </div>
                     </div>
@@ -2283,32 +2299,32 @@
 
                 <!-- Statistical Knowledge -->
                 <div style="flex:1; border:1.5px solid #E2E8F0; border-radius:8px; padding:10px 14px; background:#FFFFFF;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Statistical Knowledge</div>
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:15px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Statistical Knowledge</div>
                     <div style="height:4px; background:#E2E8F0; border-radius:2px; margin-bottom:4px;">
                         <div style="height:100%; width:70%; background:#16A34A; border-radius:2px;"></div>
                     </div>
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-style:italic; color:#64748B; margin-bottom:6px;">Strategy: encode once in the platform, everyone benefits</div>
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-style:italic; color:#334155; margin-bottom:12px;">Strategy: <strong>encode once</strong> in the platform, everyone benefits</div>
 
                     <div style="display:flex; gap:10px;">
                         <div style="flex:1;">
-                            <div style="font-size:8px; color:#94A3B8; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Users see</div>
-                            <div style="display:flex; flex-direction:column; gap:1px;">
-                                <div style="font-size:10px; color:#334155;">Experiment quality: PASS</div>
-                                <div style="font-size:10px; color:#334155;">Interpretation: green / red / gray bars</div>
+                            <div style="font-size:11px; color:#64748B; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Users see</div>
+                            <div style="display:flex; flex-direction:column; gap:2px;">
+                                <div style="font-size:11px; color:#334155;">Experiment quality: PASS</div>
+                                <div style="font-size:11px; color:#334155;">Interpretation: green / red / gray bars</div>
                             </div>
                         </div>
                         <div style="flex:1;">
-                            <div style="font-size:8px; color:#94A3B8; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Platform abstracts</div>
-                            <div style="font-size:7px; color:#94A3B8; font-style:italic; margin-bottom:2px;">Test setup</div>
-                            <div style="display:flex; flex-direction:column; gap:1px;">
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#334155;">• SRM checks</div>
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#94A3B8;">○ Power analysis</div>
+                            <div style="font-size:11px; color:#64748B; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Platform abstracts</div>
+                            <div style="font-size:10px; color:#94A3B8; font-style:italic; margin-bottom:2px;">Test setup</div>
+                            <div style="display:flex; flex-direction:column; gap:2px;">
+                                <div style="font-size:11px; color:#334155;">• SRM checks</div>
+                                <div style="font-size:11px; color:#94A3B8;">○ Power analysis</div>
                             </div>
-                            <div style="font-size:7px; color:#94A3B8; font-style:italic; margin-top:3px; margin-bottom:2px;">Readout</div>
-                            <div style="display:flex; flex-direction:column; gap:1px;">
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#334155;">• Frequentist/Sequential methodology choice</div>
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#334155;">• Winsorization</div>
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#334155;">• Multiple hypothesis correction</div>
+                            <div style="font-size:10px; color:#94A3B8; font-style:italic; margin-top:4px; margin-bottom:2px;">Readout</div>
+                            <div style="display:flex; flex-direction:column; gap:2px;">
+                                <div style="font-size:11px; color:#334155;">• Frequentist/Sequential methodology choice</div>
+                                <div style="font-size:11px; color:#334155;">• Winsorization</div>
+                                <div style="font-size:11px; color:#334155;">• Multiple hypothesis correction</div>
                             </div>
                         </div>
                     </div>
@@ -2317,24 +2333,24 @@
 
                 <!-- Domain Knowledge -->
                 <div style="flex:1; border:1.5px solid #E2E8F0; border-radius:8px; padding:10px 14px; background:#FFFFFF;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Domain Knowledge</div>
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:15px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Domain Knowledge</div>
                     <div style="height:4px; background:#E2E8F0; border-radius:2px; margin-bottom:4px;">
                         <div style="height:100%; width:25%; background:#16A34A; border-radius:2px;"></div>
                     </div>
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-style:italic; color:#64748B; margin-bottom:6px;">Strategy: make it easy for domain experts (DS, Eng leads) to onboard and set as defaults for their team to reuse</div>
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-style:italic; color:#334155; margin-bottom:12px;">Strategy: enable easy <strong>contributions</strong> from <strong>DS/Eng experts</strong> and set as <strong>templated defaults</strong> for reuse</div>
 
                     <div style="display:flex; gap:10px;">
                         <div style="flex:1;">
-                            <div style="font-size:8px; color:#94A3B8; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Users see</div>
-                            <div style="font-size:10px; color:#334155;">Smart defaults for their team</div>
+                            <div style="font-size:11px; color:#64748B; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Users see</div>
+                            <div style="font-size:11px; color:#334155;">Smart defaults for their team</div>
                         </div>
                         <div style="flex:1;">
-                            <div style="font-size:8px; color:#94A3B8; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:2px;">Teams contribute</div>
-                            <div style="display:flex; flex-direction:column; gap:1px;">
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#334155;">• Goal / guardrail metrics</div>
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#94A3B8;">○ Holdouts to respect</div>
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#94A3B8;">○ Common segmentation</div>
-                                <div style="display:flex; align-items:center; gap:4px; font-size:9px; color:#94A3B8;">○ Troubleshooting patterns</div>
+                            <div style="font-size:11px; color:#64748B; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Teams contribute</div>
+                            <div style="display:flex; flex-direction:column; gap:2px;">
+                                <div style="font-size:11px; color:#334155;">• Goal / guardrail metrics</div>
+                                <div style="font-size:11px; color:#94A3B8;">○ Holdouts to respect</div>
+                                <div style="font-size:11px; color:#94A3B8;">○ Common segmentation</div>
+                                <div style="font-size:11px; color:#94A3B8;">○ Troubleshooting patterns</div>
                             </div>
                         </div>
                     </div>
@@ -2343,23 +2359,9 @@
             </div>
         </div>
 
-        <!-- 6-MONTH ROADMAP -->
-        <div style="display:flex; align-items:center; gap:12px; margin-top:14px; margin-bottom:6px;">
-            <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1.5px; white-space:nowrap;">6-Month Roadmap</div>
-            <div style="flex:1; height:1px; background:#CBD5E1;"></div>
-        </div>
-        <div style="display:flex; gap:12px;">
-            <div style="flex:1; padding:6px 10px; border:1px solid #E2E8F0; border-radius:6px; border-left:3px solid #EF4444;">
-                <div style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:2px;">Automate missing statistical knowledge</div>
-                <div style="font-size:9px; color:#475569; line-height:1.3;">Power analysis recommendation — triggered at setup based on historical user population × metric variance</div>
-            </div>
-            <div style="flex:1; padding:6px 10px; border:1px solid #E2E8F0; border-radius:6px; border-left:3px solid #F59E0B;">
-                <div style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:2px;">Improve UX signals</div>
-                <div style="font-size:9px; color:#475569; line-height:1.3;">Stronger confidence cues: "test quality is high based on X checks", "most popular metrics for your team"</div>
-            </div>
-        </div>
-        <div style="text-align:right; margin-top:6px;">
-            <span style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:600; color:#8B5CF6; letter-spacing:0.3px;">What if AI agents could be our experimentation experts? →</span>
+        <!-- Bridge to AI agents -->
+        <div style="margin-top:14px; text-align:center;">
+            <span style="font-family:'Space Grotesk',sans-serif; font-size:15px; font-weight:600; color:#3B82F6; letter-spacing:0.3px;">What if AI agents could be our experimentation experts? →</span>
         </div>
 
         <!-- NOTE TO SELF -->
@@ -2373,63 +2375,68 @@
     <div class="slide prio-slide" id="slide-15">
     <div class="sc">
         <div class="prio-header">
-            <span class="prio-area-badge pab-who">WHO</span>
-            <span class="slide-title" style="font-size:28px;">AI Agents as Experimentation Experts</span>
+            <span class="prio-area-badge pab-p1">P1</span>
+            <span class="slide-title" style="font-size:28px;">[New] AI Agents as Experimentation Experts</span>
         </div>
         <div class="prio-principle"><strong>Big idea:</strong> Build AI MCP skills across the experiment lifecycle. Teams layer domain knowledge on top via skill templates. Skills surface in both UI and Claude Code.</div>
 
         <!-- Top: two surfaces -->
-        <div style="display:flex; gap:12px; margin-top:10px; justify-content:center;">
-            <div style="padding:6px 12px; border:0.5px solid #E2E8F0; border-radius:5px; display:flex; align-items:center; gap:8px;">
-                <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#334155;">UI</div>
-                <div style="font-size:10px; color:#64748B;">One-click access for all experimenters</div>
+        <div style="display:flex; gap:12px; margin-top:10px; justify-content:center; align-items:center;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <div style="padding:6px 20px; border:0.5px solid #E2E8F0; border-radius:5px; display:flex; align-items:center;">
+                <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#334155;">XP UI</div>
             </div>
-            <div style="padding:6px 12px; border:0.5px solid #E2E8F0; border-radius:5px; display:flex; align-items:center; gap:8px;">
+            <div style="padding:6px 20px; border:0.5px solid #E2E8F0; border-radius:5px; display:flex; align-items:center;">
                 <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#334155;">Claude Code</div>
-                <div style="font-size:10px; color:#64748B;">Engineers + team domain knowledge via skill templates</div>
+            </div>
+            <div style="padding:6px 20px; border:0.5px solid #E2E8F0; border-radius:5px; display:flex; align-items:center;">
+                <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#334155;">Notebooks</div>
             </div>
         </div>
 
         <!-- Arrow down -->
-        <div style="text-align:center; margin:4px 0; font-size:9px; color:#94A3B8;">invoke ↓</div>
+        <div style="text-align:center; margin:5px 0;">
+            <span style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:600; color:#475569; letter-spacing:0.5px;">invoke</span>
+            <span style="font-size:18px; color:#475569; vertical-align:middle; margin-left:4px;">↓</span>
+        </div>
 
         <!-- XP Agent Skills lifecycle bar (hero) -->
-        <div style="padding:12px 16px; background:#FAFBFC; border:0.5px solid #F1F5F9; border-radius:8px;">
+        <div style="padding:12px 16px; background:#FAFBFC; border:1px solid #E2E8F0; border-radius:8px;">
             <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:1px; margin-bottom:12px;">XP Agent Skills — Experiment Lifecycle</div>
-            <div style="display:flex; gap:8px; align-items:center;">
-                <div style="flex:1; padding:6px 6px; border:0.5px solid #E2E8F0; border-radius:6px; text-align:center; background:#FFFFFF;">
+            <div style="display:flex; gap:6px; align-items:center;">
+                <!-- Phase 3: Ideation -->
+                <div style="flex:1; padding:6px 6px; border:1.5px solid #E2E8F0; border-radius:6px; text-align:center; background:#FFFFFF;">
                     <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#94A3B8;">Ideation</div>
-                    <div style="font-size:8px; color:#CBD5E1; margin-top:3px;">Predictive</div>
                 </div>
-                <div style="color:#CBD5E1; font-size:16px;">→</div>
-                <div style="flex:1; padding:6px 6px; border:0.5px solid #E2E8F0; border-radius:6px; text-align:center; background:#FFFFFF;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#94A3B8;">Experiment Design</div>
-                    <div style="font-size:8px; color:#CBD5E1; margin-top:3px;">Insights</div>
+                <div style="color:#94A3B8; font-size:18px; font-weight:700;">→</div>
+                <!-- Phase 2: Experiment Design -->
+                <div style="flex:1; padding:6px 6px; border:1.5px solid #FDE68A; border-radius:6px; text-align:center; background:rgba(245,158,11,0.05);">
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#D97706;">Experiment Design</div>
                 </div>
-                <div style="color:#CBD5E1; font-size:16px;">→</div>
-                <div style="flex:1; padding:6px 6px; border:0.5px solid #DBEAFE; border-radius:6px; text-align:center; background:rgba(59,130,246,0.04);">
+                <div style="color:#94A3B8; font-size:18px; font-weight:700;">→</div>
+                <!-- Phase 1: Setup & Execution -->
+                <div style="flex:1; padding:6px 6px; border:1.5px solid #BFDBFE; border-radius:6px; text-align:center; background:rgba(59,130,246,0.06);">
                     <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#3B82F6;">Setup & Execution</div>
-                    <div style="font-size:8px; color:#93C5FD; margin-top:3px;">Automation</div>
                 </div>
-                <div style="color:#CBD5E1; font-size:16px;">→</div>
-                <div style="flex:1; padding:6px 6px; border:0.5px solid #DBEAFE; border-radius:6px; text-align:center; background:rgba(59,130,246,0.04);">
+                <div style="color:#94A3B8; font-size:18px; font-weight:700;">→</div>
+                <!-- Phase 1: Monitoring -->
+                <div style="flex:1; padding:6px 6px; border:1.5px solid #BFDBFE; border-radius:6px; text-align:center; background:rgba(59,130,246,0.06);">
                     <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#3B82F6;">Monitoring</div>
-                    <div style="font-size:8px; color:#93C5FD; margin-top:3px;">Automation</div>
                 </div>
-                <div style="color:#CBD5E1; font-size:16px;">→</div>
-                <div style="flex:1; padding:6px 6px; border:0.5px solid #E2E8F0; border-radius:6px; text-align:center; background:#FFFFFF;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#94A3B8;">Analysis & Decisioning</div>
-                    <div style="font-size:8px; color:#CBD5E1; margin-top:3px;">Insights</div>
+                <div style="color:#94A3B8; font-size:18px; font-weight:700;">→</div>
+                <!-- Phase 2: Analysis & Decisioning -->
+                <div style="flex:1; padding:6px 6px; border:1.5px solid #FDE68A; border-radius:6px; text-align:center; background:rgba(245,158,11,0.05);">
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#D97706;">Analysis & Decisioning</div>
                 </div>
-                <div style="color:#CBD5E1; font-size:16px;">→</div>
-                <div style="flex:1; padding:6px 6px; border:0.5px solid #DBEAFE; border-radius:6px; text-align:center; background:rgba(59,130,246,0.04);">
+                <div style="color:#94A3B8; font-size:18px; font-weight:700;">→</div>
+                <!-- Phase 1: Report Gen -->
+                <div style="flex:1; padding:6px 6px; border:1.5px solid #BFDBFE; border-radius:6px; text-align:center; background:rgba(59,130,246,0.06);">
                     <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#3B82F6;">Report Gen</div>
-                    <div style="font-size:8px; color:#93C5FD; margin-top:3px;">Automation</div>
                 </div>
-                <div style="color:#CBD5E1; font-size:16px;">→</div>
-                <div style="flex:1; padding:6px 6px; border:0.5px solid #DBEAFE; border-radius:6px; text-align:center; background:rgba(59,130,246,0.04);">
+                <div style="color:#94A3B8; font-size:18px; font-weight:700;">→</div>
+                <!-- Phase 1: Code Cleanup -->
+                <div style="flex:1; padding:6px 6px; border:1.5px solid #BFDBFE; border-radius:6px; text-align:center; background:rgba(59,130,246,0.06);">
                     <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#3B82F6;">Code Cleanup</div>
-                    <div style="font-size:8px; color:#93C5FD; margin-top:3px;">Automation</div>
                 </div>
             </div>
         </div>
@@ -2441,53 +2448,67 @@
         </div>
 
         <!-- Compact phase table with label column -->
-        <table style="width:100%; border-collapse:collapse; border:0.5px solid #E2E8F0; border-radius:6px; font-size:10px; table-layout:fixed;">
+        <table style="width:100%; border-collapse:collapse; border:0.5px solid #E2E8F0; border-radius:6px; font-size:12px; table-layout:fixed;">
             <colgroup>
-                <col style="width:11%;">
-                <col style="width:33%;">
+                <col style="width:10%;">
                 <col style="width:30%;">
-                <col style="width:26%;">
+                <col style="width:36%;">
+                <col style="width:24%;">
             </colgroup>
             <!-- Header row -->
             <tr>
                 <td style="padding:5px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0;"></td>
                 <td style="padding:5px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; background:rgba(59,130,246,0.03);">
                     <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#3B82F6;">Phase 1: Automation</div>
-                    <div style="font-size:9px; color:#3B82F6;">6-month</div>
+                    <div style="font-size:11px; color:#3B82F6;">6-month</div>
+                    <div style="display:flex; gap:4px; margin-top:4px; flex-wrap:wrap;">
+                        <span style="font-size:10px; font-weight:700; background:rgba(245,158,11,0.12); color:#D97706; padding:1px 6px; border-radius:3px;">Efficiency</span>
+                    </div>
                 </td>
-                <td style="padding:5px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#334155;">Phase 2: Insights</div>
-                    <div style="font-size:9px; color:#64748B;">6-month validation, 6-12 month GA</div>
+                <td style="padding:5px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; background:rgba(245,158,11,0.05);">
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#D97706;">Phase 2: Insights</div>
+                    <div style="font-size:11px; color:#D97706;">6-month validation, 6-12 month GA</div>
+                    <div style="display:flex; gap:4px; margin-top:4px; flex-wrap:wrap;">
+                        <span style="font-size:10px; font-weight:700; background:rgba(234,88,12,0.12); color:#EA580C; padding:1px 6px; border-radius:3px;">Expertise</span>
+                        <span style="font-size:10px; font-weight:700; background:rgba(245,158,11,0.12); color:#D97706; padding:1px 6px; border-radius:3px;">Efficiency</span>
+                    </div>
                 </td>
                 <td style="padding:5px 8px; border-bottom:0.5px solid #E2E8F0; opacity:0.6;">
                     <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#334155;">Phase 3: Predictive</div>
-                    <div style="font-size:9px; color:#94A3B8;">Future</div>
+                    <div style="font-size:11px; color:#94A3B8;">Future</div>
+                    <div style="display:flex; gap:4px; margin-top:4px; flex-wrap:wrap;">
+                        <span style="font-size:10px; font-weight:700; background:rgba(16,185,129,0.12); color:#059669; padding:1px 6px; border-radius:3px;">Delight</span>
+                    </div>
                 </td>
             </tr>
             <!-- User Problem row -->
             <tr>
                 <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
-                    <div style="font-size:9px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">User Problem</div>
+                    <div style="font-size:11px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">User Problem</div>
                 </td>
                 <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; background:rgba(59,130,246,0.03); vertical-align:top;">
                     <div style="color:#475569; font-style:italic; line-height:1.3;">"Run tests faster with simplified UX — saves time, reduces SEVs"</div>
                 </td>
-                <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
-                    <div style="color:#475569; font-style:italic; line-height:1.3;">"Help me design experiments and interpret results without waiting for DS"</div>
+                <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; background:rgba(245,158,11,0.05); vertical-align:top;">
+                    <div style="color:#475569; font-style:italic; line-height:1.3;">"Help me design tests and interpret results quickly"</div>
                 </td>
                 <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; vertical-align:top; opacity:0.6;">
                     <div style="color:#475569; font-style:italic; line-height:1.3;">"Help me surface what to test next and what context I need"</div>
                 </td>
             </tr>
-            <!-- Skills row -->
+            <!-- Solution row -->
             <tr>
                 <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
-                    <div style="font-size:9px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Skills</div>
+                    <div style="font-size:11px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Solution</div>
                 </td>
                 <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; background:rgba(59,130,246,0.03); vertical-align:top;">
+                    <div style="color:#334155; line-height:1.4; margin-bottom:6px;">Deliver MCPs that automate Exp workflows. Lay groundwork for context contributions to <strong>increase agent determinism</strong>.</div>
+                    <div style="font-size:11px; color:#3B82F6; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:3px;">[Skills]</div>
                     <div style="color:#475569;">Setup · Monitoring · Report Gen · Code Cleanup</div>
                 </td>
-                <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
+                <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; background:rgba(245,158,11,0.05); vertical-align:top;">
+                    <div style="color:#334155; line-height:1.4; margin-bottom:6px;">XP relies on NL→SQL technology foundation + team domain context (Phase 1) to enable <strong>natural language based experiment analysis</strong></div>
+                    <div style="font-size:11px; color:#D97706; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:3px;">[Skills]</div>
                     <div style="color:#475569;">Experiment Design · Analysis & Decisioning</div>
                 </td>
                 <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; vertical-align:top; opacity:0.6;">
@@ -2497,51 +2518,62 @@
             <!-- Risk row -->
             <tr>
                 <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
-                    <div style="font-size:9px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Risk</div>
+                    <div style="font-size:11px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Risk</div>
                 </td>
                 <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; background:rgba(59,130,246,0.03); vertical-align:top;">
                     <div style="color:#16A34A; font-weight:600;">Low <span style="color:#475569; font-weight:400;">— deterministic</span></div>
                 </td>
-                <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
-                    <div><span style="color:#F59E0B; font-weight:600;">Medium</span> <span style="color:#475569;">— surface-level decisioning on goal metrics is low risk, but</span> <span style="color:#EF4444; font-weight:600;">deep analytical dives are high risk</span> <span style="color:#475569;">with a longer-than-6-month horizon</span></div>
+                <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; background:rgba(245,158,11,0.05); vertical-align:top;">
+                    <div style="display:flex; flex-direction:column; gap:3px;">
+                        <div><span style="color:#16A34A; font-weight:600;">Low</span> <span style="color:#475569;">— surface level decisioning on goal metrics</span></div>
+                        <div><span style="color:#EF4444; font-weight:600;">High</span> <span style="color:#475569;">— deep dive analysis de-risked by NL to SQL technology which is already available in <strong><a href="https://cloud.google.com/blog/products/data-analytics/nl2sql-with-bigquery-and-gemini" target="_blank" style="color:#475569;">BigQuery (2024)</a>/AWS</strong> and available for leverage</span></div>
+                    </div>
                 </td>
                 <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; vertical-align:top; opacity:0.6;">
                     <div><span style="color:#EF4444; font-weight:600;">High</span> <span style="color:#475569;">— dependencies don't exist yet, needs predictive accuracy validation</span></div>
                 </td>
             </tr>
-            <!-- Domain Knowledge row (Ph1+2 merged) -->
+            <!-- Domain Knowledge row -->
             <tr>
                 <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
-                    <div style="font-size:9px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Domain Knowledge</div>
+                    <div style="font-size:11px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Domain Knowledge</div>
                 </td>
-                <td colspan="2" style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; background:rgba(59,130,246,0.015); vertical-align:top;">
-                    <div style="color:#475569;">User-contributed — teams build on our plugins with their own domain context to create team-specific skills</div>
+                <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; background:rgba(59,130,246,0.03); vertical-align:top;">
+                    <div style="color:#475569;">Onboard team domain context via skill templates</div>
+                </td>
+                <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; background:rgba(245,158,11,0.05); vertical-align:top;">
+                    <div style="color:#475569;">Proven user contribution pattern from Phase 1</div>
                 </td>
                 <td style="padding:4px 8px; border-bottom:0.5px solid #E2E8F0; vertical-align:top; opacity:0.6;">
-                    <div style="color:#475569;">Predictive — platform synthesizes context from historical experiments</div>
+                    <div style="color:#475569;">Platform synthesizes context from historical experiments</div>
                 </td>
             </tr>
-            <!-- Success Criteria row (Ph1+2 merged) -->
+            <!-- Success Criteria row -->
             <tr>
                 <td style="padding:4px 8px; border-right:0.5px solid #E2E8F0; vertical-align:top;">
-                    <div style="font-size:9px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Success Criteria</div>
+                    <div style="font-size:11px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Success Criteria</div>
                 </td>
-                <td colspan="2" style="padding:4px 8px; border-right:0.5px solid #E2E8F0; background:rgba(59,130,246,0.015); vertical-align:top;">
-                    <div style="color:#475569;">X% adoption rate on test execution · Time-saving estimates · DS dependency reduction from survey results</div>
+                <td style="padding:4px 8px; border-right:0.5px solid #E2E8F0; background:rgba(59,130,246,0.03); vertical-align:top;">
+                    <div style="color:#475569;">X% adoption rate on test execution · Time-saving estimates</div>
+                </td>
+                <td style="padding:4px 8px; border-right:0.5px solid #E2E8F0; background:rgba(245,158,11,0.05); vertical-align:top;">
+                    <div style="color:#475569;">DS dependency reduction from survey results</div>
                 </td>
                 <td style="padding:4px 8px; vertical-align:top; opacity:0.6;">
-                    <div style="color:#475569;">[TODO]</div>
+                    <div style="color:#475569;">TBD</div>
                 </td>
             </tr>
         </table>
 
-        <!-- Prioritization Framework -->
-        <div style="margin-top:8px;">
-            <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">Prioritization Framework:</div>
-            <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:3px;">
-                <li style="font-size:13px; color:#475569; padding-left:14px; position:relative; line-height:1.4;"><span style="position:absolute; left:0; color:#64748B;">→</span> Start with <strong>low-risk deterministic agents</strong> to prove adoption and time savings — this is the zero-to-one moment</li>
-                <li style="font-size:13px; color:#475569; padding-left:14px; position:relative; line-height:1.4;"><span style="position:absolute; left:0; color:#64748B;">→</span> Insights-driven analysis and deep dives are the holy grail to unlocking DS-optional — but <strong>require two foundations from Phase 1:</strong> teams learning to build agents, and a strong domain context contribution pattern</li>
-            </ul>
+        <!-- Sequencing statement aligned to table columns -->
+        <div style="margin-top:8px; display:flex; font-size:13px; line-height:1.5;">
+            <div style="width:10%; flex-shrink:0;"></div>
+            <div style="width:30%; flex-shrink:0; padding-right:8px; color:#3B82F6;">
+                Start with <strong>deterministic automation agents</strong> to prove adoption and time savings
+            </div>
+            <div style="width:36%; flex-shrink:0; padding-left:4px; color:#D97706;">
+                → automation for SQL-driven experiment analysis — guardrailed by domain context — will be <strong>KEY</strong> to unlocking DS dependency
+            </div>
         </div>
     </div>
     </div>
@@ -2550,18 +2582,18 @@
     <div class="slide prio-slide" id="slide-16">
     <div class="sc">
         <div class="prio-header">
-            <span class="prio-area-badge pab-who">CONTEXT</span>
+            <span class="prio-area-badge pab-p1">P1</span>
             <span class="slide-title" style="font-size:28px;">This Isn't a New Idea — It's Already Shipping in Industry</span>
         </div>
         <div class="prio-principle">Optimizely launched AI-powered experimentation capabilities in 2026. The direction we're proposing is validated by market leaders.</div>
 
         <div style="display:flex; gap:20px; margin-top:16px; flex:1; align-items:stretch;">
             <!-- Left: key takeaways -->
-            <div style="flex:1; display:flex; flex-direction:column; gap:12px;">
-                <div style="padding:12px 16px; border:0.5px solid #E2E8F0; border-radius:8px;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#334155; margin-bottom:6px;">What Optimizely shipped — "Opal"</div>
-                    <div style="font-size:11px; color:#475569; margin-bottom:6px;">Chat-interface experimentation agent with specialized sub-agents across the full lifecycle:</div>
-                    <div style="font-size:10px; color:#475569; line-height:1.6; display:flex; gap:16px;">
+            <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
+                <div style="margin-top:8px;">
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">What Optimizely Shipped — "Opal"</div>
+                    <div style="font-size:13px; color:#475569; margin-bottom:6px;">Chat-interface experimentation agent with specialized sub-agents across the full lifecycle:</div>
+                    <div style="font-size:13px; color:#475569; line-height:1.6; display:flex; gap:16px;">
                         <div>
                             <div>• Test Ideation Agent</div>
                             <div>• Opportunity Mining Agent</div>
@@ -2582,19 +2614,19 @@
                         </div>
                     </div>
                 </div>
-                <div style="padding:12px 16px; border:0.5px solid #E2E8F0; border-radius:8px;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#334155; margin-bottom:6px;">What this validates for us</div>
-                    <div style="font-size:11px; color:#475569; line-height:1.5;">
-                        <div style="margin-bottom:4px;">• The market is moving toward AI agents in experimentation</div>
-                        <div>• Our advantage: deep integration with internal infrastructure + team domain knowledge via skill templates</div>
-                    </div>
+                <div>
+                    <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">What This Validates for Us</div>
+                    <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:3px;">
+                        <li style="font-size:13px; color:#475569; padding-left:14px; position:relative; line-height:1.4;"><span style="position:absolute; left:0; color:#64748B;">→</span> The market is moving toward AI agents in experimentation</li>
+                        <li style="font-size:13px; color:#475569; padding-left:14px; position:relative; line-height:1.4;"><span style="position:absolute; left:0; color:#64748B;">→</span> Our advantage: deep integration with internal infrastructure + team domain knowledge via skill templates</li>
+                    </ul>
                 </div>
             </div>
             <!-- Right: Optimizely Opal screenshot -->
             <div style="flex:1; border:0.5px solid #E2E8F0; border-radius:8px; display:flex; flex-direction:column; background:#F8FAFC; padding:12px; overflow:hidden;">
-                <div style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:6px;">Optimizely Opal — AI Experimentation Agent</div>
+                <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:6px;">Optimizely Opal — AI Experimentation Agent</div>
                 <img src="optimizely_opal.png" style="width:100%; border-radius:6px; border:0.5px solid #E2E8F0; flex:1; object-fit:contain;">
-                <a href="https://www.optimizely.com/insights/blog/AI-experimentation/" target="_blank" style="font-size:9px; color:#3B82F6; margin-top:6px; text-decoration:none;">optimizely.com/insights/blog/AI-experimentation ↗</a>
+                <a href="https://www.optimizely.com/insights/blog/AI-experimentation/" target="_blank" style="font-size:11px; color:#3B82F6; margin-top:6px; text-decoration:none;">optimizely.com/insights/blog/AI-experimentation ↗</a>
             </div>
         </div>
     </div>
@@ -2604,7 +2636,7 @@
     <div class="slide prio-slide" id="slide-17">
     <div class="sc">
         <div class="prio-header">
-            <span class="prio-area-badge pab-who">COMPOUNDING</span>
+            <span class="prio-area-badge pab-p2">P2</span>
             <span class="slide-title" style="font-size:28px;">Unlocking Knowledge Across Experiments</span>
         </div>
 
@@ -2619,7 +2651,7 @@
             <!-- Experiments -->
             <div style="padding:8px 14px; background:#F8FAFC; border:0.5px solid #E2E8F0; border-radius:6px 0 0 6px; text-align:center; margin-top:10px;">
                 <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#334155;">Experiments</div>
-                <div style="font-size:9px; color:#94A3B8;">Teams run tests</div>
+                <div style="font-size:11px; color:#94A3B8;">Teams run tests</div>
             </div>
             <div style="color:#10B981; font-size:14px; padding:0 4px; margin-top:16px;">→</div>
             <!-- BLOCKAGE: Metadata + Agent solutions -->
@@ -2627,28 +2659,28 @@
                 <div style="padding:8px 14px; background:rgba(239,68,68,0.06); border:1.5px solid #EF4444; border-radius:6px; text-align:center;">
                     <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#EF4444; margin-bottom:4px;">⚠ Metadata Gap</div>
                     <div style="display:flex; gap:8px; justify-content:center;">
-                        <div style="font-size:10px; color:#475569; padding:4px 10px; background:#FFFFFF; border:0.5px solid #E2E8F0; border-radius:3px;"><strong>Post-launch decisions</strong><br><span style="color:#94A3B8; font-size:9px;">ship / kill / iterate</span></div>
-                        <div style="font-size:10px; color:#475569; padding:4px 10px; background:#FFFFFF; border:0.5px solid #E2E8F0; border-radius:3px;"><strong>Decision reasoning</strong><br><span style="color:#94A3B8; font-size:9px;">buried in Google Docs</span></div>
-                        <div style="font-size:10px; color:#475569; padding:4px 10px; background:#FFFFFF; border:0.5px solid #E2E8F0; border-radius:3px;"><strong>Consistent metrics</strong><br><span style="color:#94A3B8; font-size:9px;">similar metrics chosen inconsistently</span></div>
+                        <div style="font-size:11px; color:#475569; padding:4px 10px; background:#FFFFFF; border:0.5px solid #E2E8F0; border-radius:3px;"><strong>Post-launch decisions</strong><br><span style="color:#94A3B8; font-size:11px;">ship / kill / iterate</span></div>
+                        <div style="font-size:11px; color:#475569; padding:4px 10px; background:#FFFFFF; border:0.5px solid #E2E8F0; border-radius:3px;"><strong>Decision reasoning</strong><br><span style="color:#94A3B8; font-size:11px;">buried in Google Docs</span></div>
+                        <div style="font-size:11px; color:#475569; padding:4px 10px; background:#FFFFFF; border:0.5px solid #E2E8F0; border-radius:3px;"><strong>Consistent metrics</strong><br><span style="color:#94A3B8; font-size:11px;">similar metrics chosen inconsistently</span></div>
                     </div>
                 </div>
                 <!-- Agent arrows (shown when toggle is active, aligned under gap cards) -->
                 <div id="compounding-agents" style="margin-top:6px;">
                     <div style="display:flex; gap:8px; justify-content:center; margin-top:6px;">
                         <div style="flex:1; text-align:center;">
-                            <div style="color:#93C5FD; font-size:10px; margin-bottom:2px;">↑</div>
+                            <div style="color:#93C5FD; font-size:11px; margin-bottom:2px;">↑</div>
                             <div style="padding:4px 8px; background:rgba(59,130,246,0.04); border:0.5px solid #DBEAFE; border-radius:4px; display:inline-block;">
-                                <div style="font-size:10px; color:#3B82F6; font-weight:600;">Code Cleanup Agent</div>
+                                <div style="font-size:11px; color:#3B82F6; font-weight:600;">Code Cleanup Agent</div>
                             </div>
                         </div>
                         <div style="flex:1; text-align:center;">
-                            <div style="color:#93C5FD; font-size:10px; margin-bottom:2px;">↑</div>
+                            <div style="color:#93C5FD; font-size:11px; margin-bottom:2px;">↑</div>
                             <div style="padding:4px 8px; background:rgba(59,130,246,0.04); border:0.5px solid #DBEAFE; border-radius:4px; display:inline-block;">
-                                <div style="font-size:10px; color:#3B82F6; font-weight:600;">Report Gen Agent</div>
+                                <div style="font-size:11px; color:#3B82F6; font-weight:600;">Report Gen Agent</div>
                             </div>
                         </div>
                         <div style="flex:1; display:flex; align-items:center; justify-content:center;">
-                            <div style="font-size:9px; color:#3B82F6; font-style:italic; line-height:1.3;">XP agents bridge the gap — collecting structured data as a byproduct</div>
+                            <div style="font-size:11px; color:#3B82F6; font-style:italic; line-height:1.3;">XP agents bridge the gap — collecting structured data as a byproduct</div>
                         </div>
                     </div>
                 </div>
@@ -2657,13 +2689,13 @@
             <!-- Knowledge (blocked) -->
             <div style="padding:8px 14px; border:0.5px solid #E2E8F0; border-radius:0 0 0 0; text-align:center; opacity:0.6; margin-top:10px;">
                 <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#334155;">Knowledge</div>
-                <div style="font-size:9px; color:#94A3B8;">Cross-experiment learnings</div>
+                <div style="font-size:11px; color:#94A3B8;">Cross-experiment learnings</div>
             </div>
             <div style="color:#CBD5E1; font-size:14px; padding:0 4px; margin-top:16px;">→</div>
             <!-- Better experiments (blocked) -->
             <div style="padding:8px 14px; border:0.5px solid #E2E8F0; border-radius:0 6px 6px 0; text-align:center; opacity:0.6; margin-top:10px;">
                 <div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#334155;">Better Experiments</div>
-                <div style="font-size:9px; color:#94A3B8;">Ideation, leadership views</div>
+                <div style="font-size:11px; color:#94A3B8;">Ideation, leadership views</div>
             </div>
         </div>
 
@@ -2684,27 +2716,34 @@
                 </colgroup>
                 <!-- Header row -->
                 <tr>
-                    <td style="padding:6px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0;"></td>
-                    <td style="padding:6px 8px; border-bottom:0.5px dashed #DBEAFE; border-right:0.5px dashed #DBEAFE; background:rgba(59,130,246,0.02);">
+                    <td style="padding:6px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;"></td>
+                    <td style="padding:6px 8px; border-bottom:0.5px dashed #DBEAFE; border-right:0.5px dashed #DBEAFE; background:rgba(59,130,246,0.02); vertical-align:top;">
                         <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#3B82F6;">Phase 1: Organic Collection</div>
-                        <div style="font-size:9px; color:#3B82F6;">6-month · already in motion</div>
+                        <div style="font-size:11px; color:#3B82F6;">6-month · already in motion</div>
                     </td>
-                    <td style="padding:6px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0;">
+                    <td style="padding:6px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
                         <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#334155;">Phase 2: Leadership Views + Incentivized Collection</div>
-                        <div style="font-size:9px; color:#64748B;">6-month</div>
+                        <div style="font-size:11px; color:#64748B;">6-month</div>
+                        <div style="display:flex; gap:4px; margin-top:4px; flex-wrap:wrap;">
+                            <span style="font-size:10px; font-weight:700; background:rgba(245,158,11,0.12); color:#D97706; padding:1px 6px; border-radius:3px;">Efficiency</span>
+                            <span style="font-size:10px; font-weight:700; background:rgba(239,68,68,0.12); color:#DC2626; padding:1px 6px; border-radius:3px;">Trust</span>
+                        </div>
                     </td>
-                    <td style="padding:6px 8px; border-bottom:0.5px solid #E2E8F0; opacity:0.6;">
+                    <td style="padding:6px 8px; border-bottom:0.5px solid #E2E8F0; opacity:0.6; vertical-align:top;">
                         <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#334155;">Phase 3: Compounded Learnings</div>
-                        <div style="font-size:9px; color:#94A3B8;">12-month</div>
+                        <div style="font-size:11px; color:#94A3B8;">12-month</div>
+                        <div style="display:flex; gap:4px; margin-top:4px; flex-wrap:wrap;">
+                            <span style="font-size:10px; font-weight:700; background:rgba(16,185,129,0.12); color:#059669; padding:1px 6px; border-radius:3px;">Delight</span>
+                        </div>
                     </td>
                 </tr>
                 <!-- Approach row -->
                 <tr>
                     <td style="padding:5px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
-                        <div style="font-size:10px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Approach</div>
+                        <div style="font-size:11px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Approach</div>
                     </td>
                     <td style="padding:5px 8px; border-bottom:0.5px dashed #DBEAFE; border-right:0.5px dashed #DBEAFE; vertical-align:top; background:rgba(59,130,246,0.02);">
-                        <div style="color:#334155; font-style:italic; font-weight:500;">"Make it so easy it happens automatically"</div>
+                        <div style="color:#334155; font-style:italic; font-weight:500;">"Start with leadership views — agents collect metadata as a byproduct"</div>
                     </td>
                     <td style="padding:5px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
                         <div style="color:#334155; font-style:italic; font-weight:500;">"Make providing metadata worth it"</div>
@@ -2716,7 +2755,7 @@
                 <!-- What it delivers row -->
                 <tr>
                     <td style="padding:5px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
-                        <div style="font-size:10px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Delivers</div>
+                        <div style="font-size:11px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Delivers</div>
                     </td>
                     <td style="padding:5px 8px; border-bottom:0.5px dashed #DBEAFE; border-right:0.5px dashed #DBEAFE; vertical-align:top; background:rgba(59,130,246,0.02);">
                         <div style="color:#475569; line-height:1.4;">Structured metadata without new workflows</div>
@@ -2731,7 +2770,7 @@
                 <!-- Mechanisms row -->
                 <tr>
                     <td style="padding:5px 8px; border-bottom:0.5px solid #E2E8F0; border-right:0.5px solid #E2E8F0; vertical-align:top;">
-                        <div style="font-size:10px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">How</div>
+                        <div style="font-size:11px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">How</div>
                     </td>
                     <td style="padding:5px 8px; border-bottom:0.5px dashed #DBEAFE; border-right:0.5px dashed #DBEAFE; vertical-align:top; background:rgba(59,130,246,0.02);">
                         <div style="color:#475569; line-height:1.5; padding-left:10px; text-indent:-10px;">
@@ -2755,7 +2794,7 @@
                 <!-- Risk row -->
                 <tr>
                     <td style="padding:5px 8px; border-right:0.5px solid #E2E8F0; vertical-align:top;">
-                        <div style="font-size:10px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Risk</div>
+                        <div style="font-size:11px; color:#94A3B8; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Risk</div>
                     </td>
                     <td style="padding:5px 8px; border-right:0.5px dashed #DBEAFE; vertical-align:top; background:rgba(59,130,246,0.02);">
                         <div><span style="color:#16A34A; font-weight:600;">Low</span> <span style="color:#475569;">(agents)</span> / <span style="color:#F59E0B; font-weight:600;">Medium</span> <span style="color:#475569;">(LLM extraction)</span></div>
@@ -2772,86 +2811,19 @@
     </div>
     </div>
 
-    <!-- ══════════════ SLIDE 15: PRIORITIZATION — WHO+HOW ══════════════ -->
+    <!-- ══════════════ SLIDE 19: XP EMBER LEADERSHIP VIEW DEMO ══════════════ -->
     <div class="slide prio-slide" id="slide-18">
-    <div class="sc">
-        <div class="prio-header">
-            <span class="prio-area-badge pab-who">WHO + HOW</span>
-            <span class="slide-title" style="font-size:30px;">Accelerate Testing Velocity</span>
+    <div class="sc" style="height:720px; padding:20px 48px 16px;">
+        <div class="prio-header" style="margin-bottom:4px;">
+            <span class="prio-area-badge pab-p2">P2</span>
+            <span class="slide-title" style="font-size:28px;">[Mock] XP Ember — The Leadership View</span>
         </div>
-        <div class="prio-principle"><strong>User problem:</strong> All experimenters juggle 4+ tools across setup, monitoring, review, and launch — each handoff adds friction and delays, slowing time-to-decision and reducing experiment throughput.</div>
-        <!-- Prioritization Framework -->
-        <div style="margin-top:8px; margin-bottom:14px;">
-            <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">Prioritization Framework:</div>
-            <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:3px;">
-                <li style="font-size:13px; color:#475569; padding-left:14px; position:relative; line-height:1.4;"><span style="position:absolute; left:0; color:#64748B;">→</span> Ship platform guardrails first — dependency for removing DS bottleneck</li>
-                <li style="font-size:13px; color:#475569; padding-left:14px; position:relative; line-height:1.4;"><span style="position:absolute; left:0; color:#64748B;">→</span> Invest in AI-assisted workflows that leverage Eng-heavy team composition</li>
-                <li style="font-size:13px; color:#475569; padding-left:14px; position:relative; line-height:1.4;"><span style="position:absolute; left:0; color:#64748B;">→</span> Backlog UI consolidation — workarounds exist, agent APIs compound faster</li>
-            </ul>
-        </div>
+        <div style="margin-bottom:6px;"><a href="https://xp-ember.web.app/" target="_blank" style="color:#3B82F6; font-size:12px;">https://xp-ember.web.app/</a></div>
 
-        <!-- Column headers -->
-        <div style="display:flex; align-items:center; gap:12px; padding:0 16px; margin-bottom:4px;">
-            <div style="flex:1;"></div>
-            <div style="width:90px; flex-shrink:0; text-align:center; font-family:'Space Grotesk',sans-serif; font-size:10px; font-weight:700; color:#94A3B8; text-transform:uppercase; letter-spacing:1px;">Layer</div>
-            <div style="width:60px; flex-shrink:0; text-align:center; font-family:'Space Grotesk',sans-serif; font-size:10px; font-weight:700; color:#94A3B8; text-transform:uppercase; letter-spacing:1px;">Reach</div>
-            <div style="width:70px; flex-shrink:0; text-align:center; font-family:'Space Grotesk',sans-serif; font-size:10px; font-weight:700; color:#94A3B8; text-transform:uppercase; letter-spacing:1px;">Impact</div>
-        </div>
-
-        <!-- 6-MONTH ROADMAP -->
-        <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
-            <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1.5px; white-space:nowrap;">6-Month Roadmap</div>
-            <div style="flex:1; height:1px; background:#CBD5E1;"></div>
-        </div>
-        <div style="display:flex; flex-direction:column; gap:8px;">
-            <div style="display:flex; align-items:center; gap:12px; padding:12px 16px; border:1px solid #E2E8F0; border-radius:8px; border-left:4px solid #EF4444;">
-                <div style="flex:1;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:600; color:#0F172A;">Automate quality guardrails at setup, rollout, and decision time</div>
-                    <div style="font-size:11px; color:#475569; margin-top:3px;"><strong>Dependency for removing DS bottleneck.</strong> Power analysis, setup validation, statistical checks baked in.</div>
-                </div>
-                <div style="width:90px; flex-shrink:0; text-align:center;"><span style="background:rgba(239,68,68,0.1); color:#EF4444; font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; padding:3px 10px; border-radius:100px;">Foundation</span></div>
-                <div style="width:60px; flex-shrink:0; text-align:center; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#0F172A;">All users</div>
-                <div style="width:70px; flex-shrink:0; text-align:center;"><div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#0F172A;">High</div><div style="font-size:9px; color:#94A3B8;">Unlocks WHO shift</div></div>
-            </div>
-            <div style="display:flex; align-items:center; gap:12px; padding:12px 16px; border:1px solid #E2E8F0; border-radius:8px; border-left:4px solid #F59E0B;">
-                <div style="flex:1;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:600; color:#0F172A;">AI-assisted experiment design and deep dives</div>
-                    <div style="font-size:11px; color:#475569; margin-top:3px;">Close the DS skill gap — AI helps engineers design experiments and interpret results. <strong>Eng-leverage work.</strong></div>
-                </div>
-                <div style="width:90px; flex-shrink:0; text-align:center;"><span style="background:rgba(245,158,11,0.1); color:#D97706; font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; padding:3px 10px; border-radius:100px;">Velocity</span></div>
-                <div style="width:60px; flex-shrink:0; text-align:center; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#0F172A;">All eng</div>
-                <div style="width:70px; flex-shrink:0; text-align:center;"><div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#0F172A;">High</div><div style="font-size:9px; color:#94A3B8;">Removes DS dep.</div></div>
-            </div>
-            <div style="display:flex; align-items:center; gap:12px; padding:12px 16px; border:1px solid #E2E8F0; border-radius:8px; border-left:4px solid #F59E0B;">
-                <div style="flex:1;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:600; color:#0F172A;">Expose experimentation data to agents via APIs</div>
-                    <div style="font-size:11px; color:#475569; margin-top:3px;">Let agents access our data seamlessly. <strong>Compounds as AI adoption grows.</strong></div>
-                </div>
-                <div style="width:90px; flex-shrink:0; text-align:center;"><span style="background:rgba(245,158,11,0.1); color:#D97706; font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; padding:3px 10px; border-radius:100px;">Velocity</span></div>
-                <div style="width:60px; flex-shrink:0; text-align:center;"><div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#0F172A;">Growing</div><div style="font-size:9px; color:#94A3B8;">Early adopters</div></div>
-                <div style="width:70px; flex-shrink:0; text-align:center;"><div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#0F172A;">High</div><div style="font-size:9px; color:#94A3B8;">Compounds</div></div>
-            </div>
-        </div>
-
-        <!-- BACKLOG -->
-        <div style="display:flex; align-items:center; gap:12px; margin-top:14px; margin-bottom:8px;">
-            <div style="font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1.5px; white-space:nowrap;">Backlog</div>
-            <div style="flex:1; height:0; border-top:1px dashed #CBD5E1;"></div>
-        </div>
-        <div style="display:flex; flex-direction:column; gap:8px; opacity:0.6;">
-            <div style="display:flex; align-items:center; gap:12px; padding:12px 16px; border:1px solid #E2E8F0; border-radius:8px; border-left:4px solid #10B981;">
-                <div style="flex:1;">
-                    <div style="font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:600; color:#0F172A;">Streamline experiment lifecycle (reduce 4+ tools)</div>
-                    <div style="font-size:11px; color:#475569; margin-top:3px;">Consolidate setup → monitor → review → launch. <strong>Workarounds exist today.</strong></div>
-                </div>
-                <div style="width:90px; flex-shrink:0; text-align:center;"><span style="background:rgba(16,185,129,0.1); color:#059669; font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; padding:3px 10px; border-radius:100px;">Compounding</span></div>
-                <div style="width:60px; flex-shrink:0; text-align:center; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#0F172A;">All users</div>
-                <div style="width:70px; flex-shrink:0; text-align:center;"><div style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; color:#0F172A;">Med</div><div style="font-size:9px; color:#94A3B8;">Has workarounds</div></div>
-            </div>
-        </div>
-        <!-- NOTE TO SELF -->
-        <div style="position:absolute; bottom:12px; left:16px; right:16px; padding:8px 12px; background:#FEF3C7; border:1px dashed #F59E0B; border-radius:6px; font-size:10px; color:#92400E; line-height:1.4;">
-            <strong>TODO:</strong> Reframe: automating the workflow isn't just a velocity play — automating *with embedded specialized knowledge* unlocks confident self-service AND captures metadata. The "backlog" item (streamline lifecycle) becomes higher priority when framed as the vehicle for embedding knowledge + capturing metadata.
+        <div style="flex:1; display:flex; flex-direction:column; border:0.5px solid #E2E8F0; border-radius:8px; overflow:hidden; background:#000; min-height:0;">
+            <video autoplay loop muted playsinline style="width:100%; height:100%; object-fit:contain; display:block;">
+                <source src="xp-ember-leadership.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
     </div>
@@ -2897,62 +2869,71 @@
         </div>
 
         <!-- Timeline heatmap grid -->
-        <div style="display:grid; grid-template-columns:120px 24px 1fr 1fr 1fr; grid-template-rows:30px repeat(6, 1fr); gap:8px 0; flex:1; margin-top:6px; align-items:center;">
+        <div style="display:grid; grid-template-columns:120px 1fr 1fr 1fr; grid-template-rows:30px repeat(6, 1fr); gap:8px 0; flex:1; margin-top:6px; align-items:center;">
             <!-- HEADER ROW -->
-            <div></div>
             <div></div>
             <div style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1.5px; text-align:center; border-bottom:1px solid #E2E8F0; padding-bottom:4px; border-right:1px solid #E2E8F0; margin-right:8px;">0–6 Months</div>
             <div style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#64748B; text-transform:uppercase; letter-spacing:1.5px; text-align:center; border-bottom:1px solid #E2E8F0; padding-bottom:4px; border-right:1px dashed #CBD5E1; margin:0 8px;">6–12 Months</div>
             <div style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#94A3B8; text-transform:uppercase; letter-spacing:1.5px; text-align:center; border-bottom:1px dashed #E2E8F0; padding-bottom:4px; margin-left:8px;">12+ Months</div>
 
-            <!-- ROW 1: Foundation & KTLO -->
-            <div><span style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">Foundation<br>& KTLO</span></div>
-            <div></div>
-            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; background:rgba(239,68,68,0.12); border:1px solid rgba(239,68,68,0.3); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;">Fix tech debt, decouple. <strong>25%→10% KTLO</strong></span></div></div>
-            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; border:1px dashed #E2E8F0; border-radius:5px; display:flex; align-items:center; justify-content:center;"><span style="font-size:9px; color:#94A3B8;">Maintenance at ~10%</span></div></div>
-            <div style="padding-left:8px;"><div style="height:100%; border:1px dashed #E2E8F0; border-radius:5px; display:flex; align-items:center; justify-content:center;"><span style="font-size:9px; color:#94A3B8;">Steady state</span></div></div>
-
-            <!-- ROW 2: Verticals Expansion -->
-            <div><span style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">Verticals<br>Expansion</span></div>
-            <div></div>
-            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.25); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;">Unblock core XP for <strong>Games, Live</strong></span></div></div>
-            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; background:rgba(245,158,11,0.04); border:1px solid rgba(245,158,11,0.15); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:9px; color:#475569;">Custom methodology (if generalizable)</span></div></div>
-            <div style="padding-left:8px;"><div style="height:100%; border:1px dashed rgba(245,158,11,0.15); border-radius:5px; display:flex; align-items:center; justify-content:center;"><span style="font-size:9px; color:#94A3B8;">Niche capabilities</span></div></div>
-
-            <!-- ROW 3: Reduce Manual Execution (AI bracket start) -->
-            <div><span style="font-family:'Space Grotesk',sans-serif; font-size:8px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">Reduce Manual<br>Execution</span></div>
-            <div style="border-left:2px solid #3B82F6; border-top:2px solid #3B82F6; border-top-left-radius:6px; position:relative;">
-                <span style="position:absolute; left:-58px; top:50%; transform:translateY(-50%) rotate(-90deg); font-family:'Space Grotesk',sans-serif; font-size:7px; font-weight:700; color:#3B82F6; text-transform:uppercase; letter-spacing:1px; white-space:nowrap;">AI-Assisted</span>
+            <!-- ROW 1: Foundation & KTLO (P0) — Heavy / Light / Not -->
+            <div style="display:flex; flex-direction:column; gap:3px; padding-right:8px;">
+                <span class="prio-area-badge pab-p0" style="font-size:8px; padding:1px 5px; align-self:flex-start;">P0</span>
+                <span style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">Foundation<br>& KTLO</span>
             </div>
-            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; background:rgba(59,130,246,0.12); border:1px solid rgba(59,130,246,0.3); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;"><strong>Phase 1 Eng Assist</strong> — agent workflows, APIs</span></div></div>
-            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.2); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#475569;">Write APIs, automated workflows</span></div></div>
-            <div style="padding-left:8px;"><div style="height:100%; background:rgba(59,130,246,0.04); border:1px solid rgba(59,130,246,0.15); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:9px; color:#475569;">Fully automated lifecycle</span></div></div>
+            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; background:rgba(239,68,68,0.15); border:1px solid rgba(239,68,68,0.4); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;">Fix tech debt, decouple. <strong>25%→10% KTLO</strong></span></div></div>
+            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; background:rgba(239,68,68,0.05); border:1px solid rgba(239,68,68,0.2); border-radius:5px; display:flex; align-items:center; justify-content:center;"><span style="font-size:9px; color:#475569;">Maintenance at ~10%</span></div></div>
+            <div style="padding-left:8px;"><div style="height:100%; border:1px dashed rgba(239,68,68,0.15); border-radius:5px; display:flex; align-items:center; justify-content:center;"><span style="font-size:9px; color:#94A3B8;">Steady state</span></div></div>
 
-            <!-- ROW 4: Simplify Specialized Knowledge (AI bracket middle) -->
-            <div><span style="font-family:'Space Grotesk',sans-serif; font-size:8px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">Simplify Specialized<br>Knowledge</span></div>
-            <div style="border-left:2px solid #3B82F6;"></div>
-            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; background:rgba(59,130,246,0.04); border:1px solid rgba(59,130,246,0.15); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#475569;">Platform guardrails, power analysis</span></div></div>
-            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; background:rgba(59,130,246,0.12); border:1px solid rgba(59,130,246,0.3); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;"><strong>Phase 2 Insights</strong> — AI design + analysis</span></div></div>
-            <div style="padding-left:8px;"><div style="height:100%; background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.2); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:9px; color:#475569;"><strong>DS becomes optional</strong></span></div></div>
+            <!-- ROW 2: Verticals Expansion (P0) — Heavy / Light / Not -->
+            <div style="display:flex; flex-direction:column; gap:3px; padding-right:8px;">
+                <span class="prio-area-badge pab-p0" style="font-size:8px; padding:1px 5px; align-self:flex-start;">P0</span>
+                <span style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">Verticals<br>Expansion</span>
+            </div>
+            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; background:rgba(239,68,68,0.15); border:1px solid rgba(239,68,68,0.4); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;">Unblock core XP for <strong>Games, Live</strong></span></div></div>
+            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; background:rgba(239,68,68,0.05); border:1px solid rgba(239,68,68,0.2); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:9px; color:#475569;">Custom methodology (if generalizable)</span></div></div>
+            <div style="padding-left:8px;"><div style="height:100%; border:1px dashed rgba(239,68,68,0.15); border-radius:5px; display:flex; align-items:center; justify-content:center;"><span style="font-size:9px; color:#94A3B8;">Niche capabilities</span></div></div>
 
-            <!-- ROW 5: Institutional Knowledge (AI bracket end) -->
-            <div><span style="font-family:'Space Grotesk',sans-serif; font-size:8px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">Institutional<br>Knowledge</span></div>
-            <div style="border-left:2px solid #3B82F6; border-bottom:2px solid #3B82F6; border-bottom-left-radius:6px;"></div>
-            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; background:rgba(139,92,246,0.04); border:1px solid rgba(139,92,246,0.15); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#475569;">Prototype leadership XP view. Organic metadata</span></div></div>
-            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; background:rgba(139,92,246,0.08); border:1px solid rgba(139,92,246,0.2); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#475569;">Leadership views live, incentivized collection</span></div></div>
-            <div style="padding-left:8px;"><div style="height:100%; background:rgba(139,92,246,0.12); border:1px solid rgba(139,92,246,0.3); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;"><strong>Compounded learnings</strong>, predictive layer</span></div></div>
+            <!-- ROW 3: Reduce Manual Execution (P1) — Heavy / Heavy / Light -->
+            <div style="display:flex; flex-direction:column; gap:3px; padding-right:8px;">
+                <span class="prio-area-badge pab-p1" style="font-size:8px; padding:1px 5px; align-self:flex-start;">P1</span>
+                <span style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">Reduce Manual<br>Execution</span>
+            </div>
+            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;"><strong>Phase 1 Eng Assist</strong> — agent workflows, APIs</span></div></div>
+            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;">Write APIs, automated workflows</span></div></div>
+            <div style="padding-left:8px;"><div style="height:100%; background:rgba(245,158,11,0.05); border:1px solid rgba(245,158,11,0.2); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:9px; color:#475569;">Fully automated lifecycle</span></div></div>
 
-            <!-- ROW 6: New Use Cases -->
-            <div><span style="font-family:'Space Grotesk',sans-serif; font-size:8px; font-weight:700; color:#94A3B8; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">New Use Cases<br><span style="font-size:7px;">via XP R&D</span></span></div>
-            <div></div>
-            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; border:1px dashed #E2E8F0; border-radius:5px; display:flex; align-items:center; justify-content:center;"><span style="font-size:9px; color:#94A3B8; font-style:italic;">Not prioritized — limited DS (1 FTE)</span></div></div>
-            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; background:rgba(16,185,129,0.04); border:1px solid rgba(16,185,129,0.15); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:9px; color:#475569;">Custom methodology (if generalizable)</span></div></div>
-            <div style="padding-left:8px;"><div style="height:100%; background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.2); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:9px; color:#475569;">Niche capabilities, new experiment types</span></div></div>
+            <!-- ROW 4: Simplify Specialized Knowledge (P1) — Light / Heavy / Heavy -->
+            <div style="display:flex; flex-direction:column; gap:3px; padding-right:8px;">
+                <span class="prio-area-badge pab-p1" style="font-size:8px; padding:1px 5px; align-self:flex-start;">P1</span>
+                <span style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">Simplify Specialized<br>Knowledge</span>
+            </div>
+            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; background:rgba(245,158,11,0.05); border:1px solid rgba(245,158,11,0.2); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#475569;">Platform guardrails, power analysis</span></div></div>
+            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;"><strong>Phase 2 Insights</strong> — AI design + analysis</span></div></div>
+            <div style="padding-left:8px;"><div style="height:100%; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:9px; color:#334155;"><strong>DS becomes optional</strong></span></div></div>
+
+            <!-- ROW 5: New Use Cases (P1) — Not / Light / Light -->
+            <div style="display:flex; flex-direction:column; gap:3px; padding-right:8px;">
+                <span class="prio-area-badge pab-p1" style="font-size:8px; padding:1px 5px; align-self:flex-start;">P1</span>
+                <span style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#94A3B8; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">New Use Cases<br><span style="font-size:7px;">via XP R&D</span></span>
+            </div>
+            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; border:1px dashed rgba(245,158,11,0.15); border-radius:5px; display:flex; align-items:center; justify-content:center;"><span style="font-size:9px; color:#94A3B8; font-style:italic;">Not prioritized — limited DS (1 FTE)</span></div></div>
+            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; background:rgba(245,158,11,0.05); border:1px solid rgba(245,158,11,0.2); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:9px; color:#475569;">Custom methodology (if generalizable)</span></div></div>
+            <div style="padding-left:8px;"><div style="height:100%; background:rgba(245,158,11,0.05); border:1px solid rgba(245,158,11,0.2); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:9px; color:#475569;">Niche capabilities, new experiment types</span></div></div>
+
+            <!-- ROW 6: Institutional Knowledge (P2) — Light / Heavy / Heavy -->
+            <div style="display:flex; flex-direction:column; gap:3px; padding-right:8px;">
+                <span class="prio-area-badge pab-p2" style="font-size:8px; padding:1px 5px; align-self:flex-start;">P2</span>
+                <span style="font-family:'Space Grotesk',sans-serif; font-size:9px; font-weight:700; color:#0F172A; text-transform:uppercase; letter-spacing:1px; line-height:1.3;">Institutional<br>Knowledge</span>
+            </div>
+            <div style="border-right:1px solid #E2E8F0; padding-right:8px;"><div style="height:100%; background:rgba(16,185,129,0.05); border:1px solid rgba(16,185,129,0.2); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#475569;">Prototype leadership XP view. Organic metadata</span></div></div>
+            <div style="border-right:1px dashed #CBD5E1; padding:0 8px;"><div style="height:100%; background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.4); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;">Leadership views live, incentivized collection</span></div></div>
+            <div style="padding-left:8px;"><div style="height:100%; background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.4); border-radius:5px; display:flex; align-items:center; padding:0 8px;"><span style="font-size:10px; color:#334155;"><strong>Compounded learnings</strong>, predictive layer</span></div></div>
         </div>
 
         <!-- Footer -->
         <div style="margin-top:8px; font-size:11px; color:#64748B; font-style:italic; border-left:3px solid #CBD5E1; padding-left:12px;">
-            Color intensity = team focus allocation. Foundation investment front-loaded and fades; AI-assisted capabilities ramp mid-year; institutional knowledge compounds long-term.
+            P0 → P1 → P2 = priority order · Darker = higher current focus
         </div>
     </div>
     </div>
